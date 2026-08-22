@@ -1,0 +1,577 @@
+chargeback_id,transaction_id,reason_code,claimed_amount,claim_date,customer_reason,status
+CB_000001,TXN_000001,product_not_as_described,1074.45,2026-08-03,Customer claims product was different from description,lost
+CB_000002,TXN_000003,product_not_received,255.47,2026-04-18,Customer claims product was not received,won
+CB_000003,TXN_000006,product_not_as_described,3870.98,2026-08-29,Customer claims product was different from description,won
+CB_000004,TXN_000008,fraudulent,2147.1,2026-02-09,Customer does not recognize transaction,won
+CB_000005,TXN_000018,duplicate_transaction,9009.84,2026-03-27,Customer claims duplicate charge,open
+CB_000006,TXN_000020,duplicate_transaction,2329.02,2026-06-20,Customer claims duplicate charge,open
+CB_000007,TXN_000025,product_not_as_described,3636.46,2026-02-12,Customer claims product was different from description,won
+CB_000008,TXN_000035,fraudulent,2586.76,2026-07-29,Customer does not recognize transaction,under_review
+CB_000009,TXN_000047,credit_not_processed,2762.9,2026-08-22,Customer claims refund was not received,open
+CB_000010,TXN_000067,product_not_as_described,2229.95,2026-06-26,Customer claims product was different from description,lost
+CB_000011,TXN_000068,duplicate_transaction,11207.81,2026-01-30,Customer claims duplicate charge,won
+CB_000012,TXN_000071,duplicate_transaction,3248.82,2026-03-02,Customer claims duplicate charge,under_review
+CB_000013,TXN_000081,credit_not_processed,6793.29,2026-07-31,Customer claims refund was not received,won
+CB_000014,TXN_000083,fraudulent,5477.25,2026-03-09,Customer does not recognize transaction,open
+CB_000015,TXN_000088,product_not_as_described,4615.99,2026-02-13,Customer claims product was different from description,open
+CB_000016,TXN_000100,credit_not_processed,10017.16,2026-06-13,Customer claims refund was not received,under_review
+CB_000017,TXN_000111,duplicate_transaction,1124.0,2026-06-10,Customer claims duplicate charge,under_review
+CB_000018,TXN_000121,product_not_as_described,1752.44,2026-05-05,Customer claims product was different from description,lost
+CB_000019,TXN_000123,product_not_received,2063.29,2026-05-09,Customer claims product was not received,open
+CB_000020,TXN_000128,fraudulent,7286.52,2026-04-13,Customer does not recognize transaction,open
+CB_000021,TXN_000133,fraudulent,7730.03,2026-08-14,Customer does not recognize transaction,won
+CB_000022,TXN_000142,credit_not_processed,2372.54,2026-03-25,Customer claims refund was not received,won
+CB_000023,TXN_000151,product_not_received,4460.08,2026-08-28,Customer claims product was not received,lost
+CB_000024,TXN_000152,fraudulent,674.14,2026-07-17,Customer does not recognize transaction,under_review
+CB_000025,TXN_000159,product_not_as_described,1229.06,2026-07-22,Customer claims product was different from description,under_review
+CB_000026,TXN_000162,duplicate_transaction,3574.18,2026-01-29,Customer claims duplicate charge,under_review
+CB_000027,TXN_000165,fraudulent,6222.1,2026-09-08,Customer does not recognize transaction,lost
+CB_000028,TXN_000171,fraudulent,8100.44,2026-06-19,Customer does not recognize transaction,under_review
+CB_000029,TXN_000189,product_not_received,2219.85,2026-05-25,Customer claims product was not received,won
+CB_000030,TXN_000193,duplicate_transaction,2033.7,2026-04-22,Customer claims duplicate charge,open
+CB_000031,TXN_000202,product_not_as_described,11364.65,2026-06-07,Customer claims product was different from description,open
+CB_000032,TXN_000208,credit_not_processed,2450.42,2026-03-24,Customer claims refund was not received,under_review
+CB_000033,TXN_000212,product_not_as_described,4975.42,2026-03-11,Customer claims product was different from description,open
+CB_000034,TXN_000220,product_not_as_described,12363.48,2026-04-09,Customer claims product was different from description,open
+CB_000035,TXN_000238,product_not_received,13590.83,2026-03-02,Customer claims product was not received,under_review
+CB_000036,TXN_000244,product_not_received,4353.68,2026-02-25,Customer claims product was not received,under_review
+CB_000037,TXN_000245,product_not_as_described,6811.68,2026-08-03,Customer claims product was different from description,open
+CB_000038,TXN_000253,fraudulent,2987.43,2026-06-15,Customer does not recognize transaction,won
+CB_000039,TXN_000256,fraudulent,5636.48,2026-06-09,Customer does not recognize transaction,open
+CB_000040,TXN_000260,product_not_received,5746.37,2026-04-04,Customer claims product was not received,lost
+CB_000041,TXN_000263,product_not_as_described,2549.79,2026-04-09,Customer claims product was different from description,under_review
+CB_000042,TXN_000267,product_not_received,869.52,2026-07-25,Customer claims product was not received,open
+CB_000043,TXN_000281,product_not_received,2018.91,2026-07-30,Customer claims product was not received,open
+CB_000044,TXN_000292,fraudulent,1986.16,2026-08-29,Customer does not recognize transaction,open
+CB_000045,TXN_000301,product_not_received,1114.93,2026-04-06,Customer claims product was not received,open
+CB_000046,TXN_000314,fraudulent,1674.36,2026-06-28,Customer does not recognize transaction,lost
+CB_000047,TXN_000322,fraudulent,3238.41,2026-07-26,Customer does not recognize transaction,won
+CB_000048,TXN_000325,duplicate_transaction,1850.1,2026-09-18,Customer claims duplicate charge,lost
+CB_000049,TXN_000351,fraudulent,11688.61,2026-06-26,Customer does not recognize transaction,lost
+CB_000050,TXN_000353,duplicate_transaction,4476.29,2026-08-05,Customer claims duplicate charge,won
+CB_000051,TXN_000356,duplicate_transaction,7436.12,2026-08-02,Customer claims duplicate charge,won
+CB_000052,TXN_000369,credit_not_processed,1129.04,2026-02-07,Customer claims refund was not received,lost
+CB_000053,TXN_000370,product_not_received,3789.01,2026-03-27,Customer claims product was not received,lost
+CB_000054,TXN_000384,credit_not_processed,2943.61,2026-09-06,Customer claims refund was not received,open
+CB_000055,TXN_000397,duplicate_transaction,1883.23,2026-08-17,Customer claims duplicate charge,open
+CB_000056,TXN_000400,product_not_as_described,4675.98,2026-09-29,Customer claims product was different from description,won
+CB_000057,TXN_000404,product_not_received,1344.65,2026-03-04,Customer claims product was not received,won
+CB_000058,TXN_000405,duplicate_transaction,7508.99,2026-07-06,Customer claims duplicate charge,won
+CB_000059,TXN_000407,product_not_received,1622.37,2026-03-24,Customer claims product was not received,won
+CB_000060,TXN_000431,product_not_received,6352.49,2026-04-21,Customer claims product was not received,won
+CB_000061,TXN_000432,duplicate_transaction,4246.34,2026-05-19,Customer claims duplicate charge,lost
+CB_000062,TXN_000433,product_not_received,4675.73,2026-05-18,Customer claims product was not received,won
+CB_000063,TXN_000435,fraudulent,4351.87,2026-05-16,Customer does not recognize transaction,lost
+CB_000064,TXN_000441,credit_not_processed,5310.58,2026-02-20,Customer claims refund was not received,under_review
+CB_000065,TXN_000450,product_not_as_described,2716.01,2026-03-29,Customer claims product was different from description,lost
+CB_000066,TXN_000464,fraudulent,11578.17,2026-04-18,Customer does not recognize transaction,under_review
+CB_000067,TXN_000465,credit_not_processed,1534.6,2026-05-17,Customer claims refund was not received,lost
+CB_000068,TXN_000467,fraudulent,8444.2,2026-03-13,Customer does not recognize transaction,under_review
+CB_000069,TXN_000471,duplicate_transaction,1033.41,2026-02-05,Customer claims duplicate charge,open
+CB_000070,TXN_000486,product_not_as_described,1510.16,2026-06-23,Customer claims product was different from description,open
+CB_000071,TXN_000488,duplicate_transaction,2241.72,2026-07-27,Customer claims duplicate charge,under_review
+CB_000072,TXN_000501,duplicate_transaction,8678.01,2026-07-17,Customer claims duplicate charge,lost
+CB_000073,TXN_000508,fraudulent,2605.75,2026-01-23,Customer does not recognize transaction,open
+CB_000074,TXN_000519,product_not_as_described,21692.14,2026-03-26,Customer claims product was different from description,open
+CB_000075,TXN_000527,fraudulent,4070.24,2026-04-22,Customer does not recognize transaction,lost
+CB_000076,TXN_000528,product_not_as_described,2459.83,2026-06-04,Customer claims product was different from description,won
+CB_000077,TXN_000541,duplicate_transaction,4933.18,2026-07-27,Customer claims duplicate charge,open
+CB_000078,TXN_000542,credit_not_processed,2769.41,2026-07-26,Customer claims refund was not received,won
+CB_000079,TXN_000544,fraudulent,7379.19,2026-07-05,Customer does not recognize transaction,under_review
+CB_000080,TXN_000564,credit_not_processed,2990.52,2026-07-01,Customer claims refund was not received,open
+CB_000081,TXN_000565,credit_not_processed,3893.83,2026-03-29,Customer claims refund was not received,lost
+CB_000082,TXN_000572,fraudulent,2992.36,2026-03-10,Customer does not recognize transaction,lost
+CB_000083,TXN_000574,product_not_as_described,2621.72,2026-08-19,Customer claims product was different from description,under_review
+CB_000084,TXN_000578,credit_not_processed,1247.67,2026-05-27,Customer claims refund was not received,under_review
+CB_000085,TXN_000585,duplicate_transaction,1897.65,2026-04-03,Customer claims duplicate charge,lost
+CB_000086,TXN_000600,credit_not_processed,3650.26,2026-04-27,Customer claims refund was not received,under_review
+CB_000087,TXN_000603,product_not_received,5652.7,2026-07-16,Customer claims product was not received,lost
+CB_000088,TXN_000615,credit_not_processed,1045.57,2026-02-27,Customer claims refund was not received,lost
+CB_000089,TXN_000617,fraudulent,2183.91,2026-08-08,Customer does not recognize transaction,under_review
+CB_000090,TXN_000623,duplicate_transaction,5947.06,2026-07-29,Customer claims duplicate charge,under_review
+CB_000091,TXN_000659,credit_not_processed,11285.97,2026-07-22,Customer claims refund was not received,open
+CB_000092,TXN_000664,credit_not_processed,2996.86,2026-05-18,Customer claims refund was not received,open
+CB_000093,TXN_000696,duplicate_transaction,4537.89,2026-05-11,Customer claims duplicate charge,open
+CB_000094,TXN_000717,fraudulent,1767.31,2026-09-17,Customer does not recognize transaction,open
+CB_000095,TXN_000725,product_not_as_described,1716.7,2026-07-14,Customer claims product was different from description,won
+CB_000096,TXN_000735,duplicate_transaction,4554.68,2026-02-27,Customer claims duplicate charge,lost
+CB_000097,TXN_000746,product_not_received,16901.66,2026-05-16,Customer claims product was not received,under_review
+CB_000098,TXN_000761,duplicate_transaction,14082.75,2026-08-11,Customer claims duplicate charge,lost
+CB_000099,TXN_000781,product_not_received,3473.01,2026-04-05,Customer claims product was not received,lost
+CB_000100,TXN_000784,product_not_received,1633.04,2026-07-08,Customer claims product was not received,won
+CB_000101,TXN_000791,product_not_as_described,9579.51,2026-08-13,Customer claims product was different from description,under_review
+CB_000102,TXN_000812,product_not_as_described,1628.6,2026-08-05,Customer claims product was different from description,under_review
+CB_000103,TXN_000818,duplicate_transaction,2493.95,2026-02-11,Customer claims duplicate charge,under_review
+CB_000104,TXN_000840,product_not_received,3614.56,2026-09-07,Customer claims product was not received,won
+CB_000105,TXN_000850,product_not_received,4339.88,2026-09-05,Customer claims product was not received,lost
+CB_000106,TXN_000853,fraudulent,4131.69,2026-08-12,Customer does not recognize transaction,open
+CB_000107,TXN_000857,product_not_received,2038.06,2026-05-15,Customer claims product was not received,lost
+CB_000108,TXN_000858,duplicate_transaction,4885.4,2026-05-31,Customer claims duplicate charge,lost
+CB_000109,TXN_000859,credit_not_processed,3932.61,2026-04-17,Customer claims refund was not received,under_review
+CB_000110,TXN_000866,duplicate_transaction,2423.66,2026-08-14,Customer claims duplicate charge,lost
+CB_000111,TXN_000871,fraudulent,2498.15,2026-06-06,Customer does not recognize transaction,lost
+CB_000112,TXN_000886,fraudulent,1405.52,2026-04-09,Customer does not recognize transaction,under_review
+CB_000113,TXN_000909,product_not_as_described,7394.23,2026-02-23,Customer claims product was different from description,won
+CB_000114,TXN_000935,credit_not_processed,2292.57,2026-05-08,Customer claims refund was not received,lost
+CB_000115,TXN_000951,fraudulent,8623.58,2026-03-30,Customer does not recognize transaction,won
+CB_000116,TXN_000960,credit_not_processed,3378.33,2026-06-13,Customer claims refund was not received,won
+CB_000117,TXN_000981,product_not_received,12986.52,2026-04-09,Customer claims product was not received,won
+CB_000118,TXN_000985,duplicate_transaction,14127.59,2026-04-11,Customer claims duplicate charge,lost
+CB_000119,TXN_000991,fraudulent,20396.12,2026-06-06,Customer does not recognize transaction,under_review
+CB_000120,TXN_000997,product_not_as_described,1826.41,2026-05-19,Customer claims product was different from description,lost
+CB_000121,TXN_001008,fraudulent,12514.09,2026-06-15,Customer does not recognize transaction,open
+CB_000122,TXN_001013,product_not_as_described,8973.67,2026-04-17,Customer claims product was different from description,lost
+CB_000123,TXN_001020,fraudulent,2125.75,2026-04-10,Customer does not recognize transaction,lost
+CB_000124,TXN_001021,product_not_received,3841.54,2026-04-23,Customer claims product was not received,under_review
+CB_000125,TXN_001025,product_not_received,16726.71,2026-02-21,Customer claims product was not received,open
+CB_000126,TXN_001026,credit_not_processed,3063.09,2026-06-04,Customer claims refund was not received,open
+CB_000127,TXN_001027,fraudulent,2007.24,2026-02-20,Customer does not recognize transaction,lost
+CB_000128,TXN_001039,credit_not_processed,3604.41,2026-09-12,Customer claims refund was not received,won
+CB_000129,TXN_001056,fraudulent,2594.13,2026-06-09,Customer does not recognize transaction,won
+CB_000130,TXN_001062,fraudulent,13504.99,2026-06-25,Customer does not recognize transaction,won
+CB_000131,TXN_001066,product_not_as_described,1271.44,2026-05-27,Customer claims product was different from description,under_review
+CB_000132,TXN_001087,credit_not_processed,3733.04,2026-08-08,Customer claims refund was not received,open
+CB_000133,TXN_001094,duplicate_transaction,2419.71,2026-03-31,Customer claims duplicate charge,open
+CB_000134,TXN_001100,product_not_received,4117.23,2026-08-11,Customer claims product was not received,under_review
+CB_000135,TXN_001127,product_not_received,5159.97,2026-05-07,Customer claims product was not received,won
+CB_000136,TXN_001133,product_not_as_described,3283.5,2026-04-30,Customer claims product was different from description,open
+CB_000137,TXN_001135,product_not_received,2416.19,2026-09-11,Customer claims product was not received,won
+CB_000138,TXN_001145,duplicate_transaction,4971.35,2026-03-13,Customer claims duplicate charge,under_review
+CB_000139,TXN_001166,fraudulent,26060.16,2026-03-29,Customer does not recognize transaction,won
+CB_000140,TXN_001174,fraudulent,18951.0,2026-04-17,Customer does not recognize transaction,lost
+CB_000141,TXN_001175,product_not_received,7619.05,2026-04-10,Customer claims product was not received,under_review
+CB_000142,TXN_001176,duplicate_transaction,747.46,2026-04-01,Customer claims duplicate charge,won
+CB_000143,TXN_001178,product_not_as_described,6207.52,2026-01-27,Customer claims product was different from description,under_review
+CB_000144,TXN_001180,product_not_received,7554.09,2026-04-19,Customer claims product was not received,open
+CB_000145,TXN_001182,fraudulent,14997.54,2026-04-14,Customer does not recognize transaction,lost
+CB_000146,TXN_001185,product_not_received,14705.42,2026-04-26,Customer claims product was not received,lost
+CB_000147,TXN_001194,fraudulent,5127.79,2026-04-03,Customer does not recognize transaction,lost
+CB_000148,TXN_001199,product_not_received,2369.33,2026-06-29,Customer claims product was not received,won
+CB_000149,TXN_001200,duplicate_transaction,3399.46,2026-02-26,Customer claims duplicate charge,lost
+CB_000150,TXN_001207,product_not_received,1964.61,2026-05-30,Customer claims product was not received,won
+CB_000151,TXN_001253,duplicate_transaction,3222.74,2026-05-04,Customer claims duplicate charge,lost
+CB_000152,TXN_001256,product_not_as_described,3583.44,2026-08-01,Customer claims product was different from description,open
+CB_000153,TXN_001262,product_not_received,3883.51,2026-02-25,Customer claims product was not received,won
+CB_000154,TXN_001266,credit_not_processed,2588.49,2026-04-16,Customer claims refund was not received,won
+CB_000155,TXN_001269,duplicate_transaction,6053.26,2026-07-17,Customer claims duplicate charge,under_review
+CB_000156,TXN_001271,product_not_as_described,3200.54,2026-05-07,Customer claims product was different from description,lost
+CB_000157,TXN_001274,product_not_received,7014.03,2026-07-23,Customer claims product was not received,under_review
+CB_000158,TXN_001280,credit_not_processed,1912.74,2026-03-12,Customer claims refund was not received,won
+CB_000159,TXN_001294,fraudulent,6260.08,2026-04-12,Customer does not recognize transaction,won
+CB_000160,TXN_001323,fraudulent,3885.09,2026-05-26,Customer does not recognize transaction,open
+CB_000161,TXN_001328,fraudulent,8206.09,2026-07-28,Customer does not recognize transaction,lost
+CB_000162,TXN_001331,credit_not_processed,4122.33,2026-09-05,Customer claims refund was not received,open
+CB_000163,TXN_001333,fraudulent,3105.72,2026-05-25,Customer does not recognize transaction,won
+CB_000164,TXN_001341,product_not_as_described,2678.02,2026-05-12,Customer claims product was different from description,lost
+CB_000165,TXN_001349,product_not_as_described,1269.5,2026-06-07,Customer claims product was different from description,open
+CB_000166,TXN_001381,duplicate_transaction,2658.19,2026-08-07,Customer claims duplicate charge,won
+CB_000167,TXN_001382,product_not_as_described,3209.75,2026-06-06,Customer claims product was different from description,under_review
+CB_000168,TXN_001395,duplicate_transaction,2754.04,2026-03-22,Customer claims duplicate charge,under_review
+CB_000169,TXN_001399,product_not_as_described,1289.5,2026-04-09,Customer claims product was different from description,won
+CB_000170,TXN_001402,credit_not_processed,4037.23,2026-03-03,Customer claims refund was not received,lost
+CB_000171,TXN_001404,product_not_received,1353.24,2026-04-07,Customer claims product was not received,won
+CB_000172,TXN_001407,credit_not_processed,3551.83,2026-03-13,Customer claims refund was not received,won
+CB_000173,TXN_001411,duplicate_transaction,1900.02,2026-08-06,Customer claims duplicate charge,won
+CB_000174,TXN_001423,credit_not_processed,1893.59,2026-08-20,Customer claims refund was not received,lost
+CB_000175,TXN_001425,credit_not_processed,4840.18,2026-06-27,Customer claims refund was not received,open
+CB_000176,TXN_001426,product_not_received,11155.25,2026-05-20,Customer claims product was not received,lost
+CB_000177,TXN_001431,product_not_received,3600.46,2026-03-10,Customer claims product was not received,won
+CB_000178,TXN_001432,duplicate_transaction,4694.79,2026-03-29,Customer claims duplicate charge,lost
+CB_000179,TXN_001443,credit_not_processed,788.81,2026-06-05,Customer claims refund was not received,under_review
+CB_000180,TXN_001450,product_not_as_described,1087.69,2026-06-19,Customer claims product was different from description,won
+CB_000181,TXN_001454,duplicate_transaction,454.78,2026-07-03,Customer claims duplicate charge,open
+CB_000182,TXN_001458,fraudulent,12584.27,2026-06-20,Customer does not recognize transaction,under_review
+CB_000183,TXN_001462,product_not_received,7534.05,2026-09-20,Customer claims product was not received,won
+CB_000184,TXN_001465,fraudulent,1860.05,2026-01-30,Customer does not recognize transaction,under_review
+CB_000185,TXN_001474,product_not_as_described,4113.81,2026-03-30,Customer claims product was different from description,under_review
+CB_000186,TXN_001477,product_not_received,3168.93,2026-04-22,Customer claims product was not received,under_review
+CB_000187,TXN_001483,product_not_as_described,3788.83,2026-05-01,Customer claims product was different from description,lost
+CB_000188,TXN_001488,duplicate_transaction,5629.39,2026-06-03,Customer claims duplicate charge,open
+CB_000189,TXN_001491,product_not_received,2586.33,2026-01-28,Customer claims product was not received,under_review
+CB_000190,TXN_001506,fraudulent,1093.62,2026-06-20,Customer does not recognize transaction,under_review
+CB_000191,TXN_001514,product_not_received,6594.31,2026-04-01,Customer claims product was not received,open
+CB_000192,TXN_001539,product_not_as_described,3944.75,2026-09-08,Customer claims product was different from description,won
+CB_000193,TXN_001540,product_not_as_described,3603.5,2026-04-19,Customer claims product was different from description,won
+CB_000194,TXN_001545,product_not_as_described,2122.29,2026-06-26,Customer claims product was different from description,under_review
+CB_000195,TXN_001589,product_not_as_described,3279.72,2026-07-05,Customer claims product was different from description,under_review
+CB_000196,TXN_001594,product_not_as_described,2574.96,2026-02-14,Customer claims product was different from description,lost
+CB_000197,TXN_001597,fraudulent,2511.58,2026-04-01,Customer does not recognize transaction,under_review
+CB_000198,TXN_001645,product_not_as_described,8584.41,2026-08-02,Customer claims product was different from description,under_review
+CB_000199,TXN_001672,duplicate_transaction,4117.34,2026-03-15,Customer claims duplicate charge,open
+CB_000200,TXN_001687,product_not_received,3362.84,2026-05-27,Customer claims product was not received,under_review
+CB_000201,TXN_001694,product_not_as_described,1930.42,2026-01-30,Customer claims product was different from description,under_review
+CB_000202,TXN_001704,product_not_received,3233.5,2026-04-27,Customer claims product was not received,under_review
+CB_000203,TXN_001705,credit_not_processed,1159.49,2026-05-14,Customer claims refund was not received,lost
+CB_000204,TXN_001713,product_not_as_described,3644.89,2026-07-27,Customer claims product was different from description,won
+CB_000205,TXN_001718,product_not_received,8569.42,2026-07-22,Customer claims product was not received,open
+CB_000206,TXN_001722,fraudulent,1974.71,2026-01-08,Customer does not recognize transaction,under_review
+CB_000207,TXN_001741,duplicate_transaction,8664.09,2026-04-30,Customer claims duplicate charge,open
+CB_000208,TXN_001743,credit_not_processed,2387.02,2026-03-28,Customer claims refund was not received,under_review
+CB_000209,TXN_001749,product_not_received,1789.87,2026-08-07,Customer claims product was not received,open
+CB_000210,TXN_001753,product_not_received,1144.78,2026-04-03,Customer claims product was not received,under_review
+CB_000211,TXN_001755,fraudulent,1786.11,2026-04-27,Customer does not recognize transaction,lost
+CB_000212,TXN_001773,product_not_as_described,14974.16,2026-04-08,Customer claims product was different from description,open
+CB_000213,TXN_001791,product_not_as_described,2016.97,2026-06-09,Customer claims product was different from description,open
+CB_000214,TXN_001809,duplicate_transaction,10965.97,2026-08-15,Customer claims duplicate charge,under_review
+CB_000215,TXN_001815,duplicate_transaction,2038.78,2026-08-21,Customer claims duplicate charge,open
+CB_000216,TXN_001822,product_not_as_described,1038.16,2026-07-26,Customer claims product was different from description,under_review
+CB_000217,TXN_001824,fraudulent,490.35,2026-08-17,Customer does not recognize transaction,under_review
+CB_000218,TXN_001828,credit_not_processed,3421.85,2026-08-05,Customer claims refund was not received,open
+CB_000219,TXN_001872,credit_not_processed,4770.24,2026-08-03,Customer claims refund was not received,won
+CB_000220,TXN_001881,credit_not_processed,5470.0,2026-03-20,Customer claims refund was not received,under_review
+CB_000221,TXN_001884,credit_not_processed,1650.68,2026-07-13,Customer claims refund was not received,under_review
+CB_000222,TXN_001888,fraudulent,1684.23,2026-08-22,Customer does not recognize transaction,won
+CB_000223,TXN_001892,credit_not_processed,2723.84,2026-02-13,Customer claims refund was not received,won
+CB_000224,TXN_001896,product_not_received,820.19,2026-07-02,Customer claims product was not received,open
+CB_000225,TXN_001899,product_not_as_described,14411.27,2026-04-19,Customer claims product was different from description,won
+CB_000226,TXN_001901,duplicate_transaction,1700.19,2026-02-08,Customer claims duplicate charge,won
+CB_000227,TXN_001902,fraudulent,3133.45,2026-06-25,Customer does not recognize transaction,lost
+CB_000228,TXN_001905,credit_not_processed,2489.61,2026-08-19,Customer claims refund was not received,under_review
+CB_000229,TXN_001911,fraudulent,1643.63,2026-03-22,Customer does not recognize transaction,open
+CB_000230,TXN_001918,product_not_as_described,2321.79,2026-06-02,Customer claims product was different from description,lost
+CB_000231,TXN_001925,duplicate_transaction,13131.09,2026-09-14,Customer claims duplicate charge,under_review
+CB_000232,TXN_001930,fraudulent,2835.89,2026-06-12,Customer does not recognize transaction,lost
+CB_000233,TXN_001935,credit_not_processed,3887.02,2026-02-09,Customer claims refund was not received,open
+CB_000234,TXN_001936,product_not_received,5050.58,2026-05-05,Customer claims product was not received,won
+CB_000235,TXN_001941,fraudulent,4696.78,2026-03-30,Customer does not recognize transaction,open
+CB_000236,TXN_001942,product_not_as_described,1424.56,2026-03-24,Customer claims product was different from description,lost
+CB_000237,TXN_001943,duplicate_transaction,4413.13,2026-04-18,Customer claims duplicate charge,open
+CB_000238,TXN_001944,product_not_received,3121.67,2026-05-19,Customer claims product was not received,under_review
+CB_000239,TXN_001951,fraudulent,1749.03,2026-08-15,Customer does not recognize transaction,open
+CB_000240,TXN_001961,duplicate_transaction,6453.98,2026-06-04,Customer claims duplicate charge,lost
+CB_000241,TXN_001965,fraudulent,1124.57,2026-01-24,Customer does not recognize transaction,won
+CB_000242,TXN_001966,duplicate_transaction,2202.36,2026-07-12,Customer claims duplicate charge,under_review
+CB_000243,TXN_001979,duplicate_transaction,4749.52,2026-04-15,Customer claims duplicate charge,under_review
+CB_000244,TXN_002025,fraudulent,2388.47,2026-02-16,Customer does not recognize transaction,lost
+CB_000245,TXN_002037,product_not_as_described,1714.19,2026-04-02,Customer claims product was different from description,lost
+CB_000246,TXN_002046,product_not_received,3189.42,2026-05-09,Customer claims product was not received,lost
+CB_000247,TXN_002050,fraudulent,2684.26,2026-05-23,Customer does not recognize transaction,lost
+CB_000248,TXN_002068,product_not_received,1650.1,2026-05-30,Customer claims product was not received,under_review
+CB_000249,TXN_002098,product_not_as_described,3557.01,2026-07-07,Customer claims product was different from description,lost
+CB_000250,TXN_002132,product_not_received,3060.51,2026-02-23,Customer claims product was not received,lost
+CB_000251,TXN_002134,credit_not_processed,1759.97,2026-07-13,Customer claims refund was not received,won
+CB_000252,TXN_002137,product_not_as_described,3577.38,2026-08-06,Customer claims product was different from description,open
+CB_000253,TXN_002141,duplicate_transaction,2430.13,2026-03-20,Customer claims duplicate charge,under_review
+CB_000254,TXN_002142,product_not_received,1472.46,2026-08-04,Customer claims product was not received,won
+CB_000255,TXN_002144,product_not_as_described,7392.31,2026-09-16,Customer claims product was different from description,lost
+CB_000256,TXN_002149,product_not_received,1334.19,2026-06-05,Customer claims product was not received,lost
+CB_000257,TXN_002159,credit_not_processed,2898.08,2026-08-07,Customer claims refund was not received,open
+CB_000258,TXN_002160,credit_not_processed,4162.84,2026-01-27,Customer claims refund was not received,won
+CB_000259,TXN_002162,duplicate_transaction,874.93,2026-03-28,Customer claims duplicate charge,under_review
+CB_000260,TXN_002164,duplicate_transaction,5482.19,2026-02-04,Customer claims duplicate charge,lost
+CB_000261,TXN_002179,product_not_as_described,6759.27,2026-06-07,Customer claims product was different from description,open
+CB_000262,TXN_002187,fraudulent,5765.53,2026-08-06,Customer does not recognize transaction,under_review
+CB_000263,TXN_002203,duplicate_transaction,4152.62,2026-07-13,Customer claims duplicate charge,under_review
+CB_000264,TXN_002231,product_not_as_described,1474.66,2026-06-14,Customer claims product was different from description,open
+CB_000265,TXN_002232,fraudulent,3745.91,2026-08-19,Customer does not recognize transaction,lost
+CB_000266,TXN_002233,duplicate_transaction,2665.53,2026-08-04,Customer claims duplicate charge,won
+CB_000267,TXN_002238,product_not_as_described,26894.23,2026-08-16,Customer claims product was different from description,lost
+CB_000268,TXN_002249,product_not_received,2814.81,2026-05-09,Customer claims product was not received,won
+CB_000269,TXN_002260,product_not_as_described,1377.8,2026-07-10,Customer claims product was different from description,won
+CB_000270,TXN_002264,product_not_received,3121.52,2026-04-30,Customer claims product was not received,open
+CB_000271,TXN_002265,product_not_as_described,4155.11,2026-03-28,Customer claims product was different from description,lost
+CB_000272,TXN_002274,duplicate_transaction,8525.41,2026-09-06,Customer claims duplicate charge,won
+CB_000273,TXN_002280,product_not_as_described,2316.17,2026-09-03,Customer claims product was different from description,under_review
+CB_000274,TXN_002302,credit_not_processed,302.01,2026-03-15,Customer claims refund was not received,under_review
+CB_000275,TXN_002320,duplicate_transaction,20445.59,2026-05-28,Customer claims duplicate charge,open
+CB_000276,TXN_002330,product_not_as_described,5672.95,2026-09-11,Customer claims product was different from description,under_review
+CB_000277,TXN_002333,product_not_as_described,3739.14,2026-07-12,Customer claims product was different from description,won
+CB_000278,TXN_002335,duplicate_transaction,1560.72,2026-03-21,Customer claims duplicate charge,open
+CB_000279,TXN_002352,fraudulent,4339.9,2026-07-22,Customer does not recognize transaction,under_review
+CB_000280,TXN_002363,product_not_as_described,7467.71,2026-06-08,Customer claims product was different from description,lost
+CB_000281,TXN_002373,product_not_received,2270.39,2026-07-20,Customer claims product was not received,lost
+CB_000282,TXN_002389,product_not_as_described,819.22,2026-03-31,Customer claims product was different from description,lost
+CB_000283,TXN_002396,product_not_as_described,5332.99,2026-05-29,Customer claims product was different from description,lost
+CB_000284,TXN_002397,fraudulent,3789.72,2026-08-13,Customer does not recognize transaction,lost
+CB_000285,TXN_002405,product_not_as_described,1818.78,2026-03-28,Customer claims product was different from description,under_review
+CB_000286,TXN_002407,product_not_as_described,3832.22,2026-01-28,Customer claims product was different from description,lost
+CB_000287,TXN_002413,fraudulent,4805.76,2026-08-15,Customer does not recognize transaction,under_review
+CB_000288,TXN_002414,credit_not_processed,6293.72,2026-08-08,Customer claims refund was not received,open
+CB_000289,TXN_002423,fraudulent,10705.24,2026-05-24,Customer does not recognize transaction,under_review
+CB_000290,TXN_002431,credit_not_processed,1978.68,2026-03-12,Customer claims refund was not received,lost
+CB_000291,TXN_002435,fraudulent,12000.71,2026-03-27,Customer does not recognize transaction,lost
+CB_000292,TXN_002447,duplicate_transaction,1939.79,2026-03-18,Customer claims duplicate charge,won
+CB_000293,TXN_002449,duplicate_transaction,3864.38,2026-07-21,Customer claims duplicate charge,open
+CB_000294,TXN_002468,credit_not_processed,13741.58,2026-07-25,Customer claims refund was not received,won
+CB_000295,TXN_002487,product_not_received,7483.62,2026-08-07,Customer claims product was not received,lost
+CB_000296,TXN_002488,duplicate_transaction,3026.81,2026-02-13,Customer claims duplicate charge,lost
+CB_000297,TXN_002505,product_not_received,1799.81,2026-02-02,Customer claims product was not received,won
+CB_000298,TXN_002510,product_not_as_described,13292.77,2026-05-07,Customer claims product was different from description,under_review
+CB_000299,TXN_002516,duplicate_transaction,3830.88,2026-05-17,Customer claims duplicate charge,lost
+CB_000300,TXN_002526,product_not_as_described,6458.21,2026-01-27,Customer claims product was different from description,under_review
+CB_000301,TXN_002529,product_not_as_described,1718.31,2026-06-23,Customer claims product was different from description,under_review
+CB_000302,TXN_002539,duplicate_transaction,4150.81,2026-03-24,Customer claims duplicate charge,open
+CB_000303,TXN_002548,credit_not_processed,30123.35,2026-01-29,Customer claims refund was not received,under_review
+CB_000304,TXN_002555,fraudulent,2701.1,2026-06-12,Customer does not recognize transaction,won
+CB_000305,TXN_002556,product_not_received,3727.44,2026-02-19,Customer claims product was not received,under_review
+CB_000306,TXN_002571,credit_not_processed,10825.35,2026-02-28,Customer claims refund was not received,lost
+CB_000307,TXN_002587,credit_not_processed,4062.17,2026-07-31,Customer claims refund was not received,lost
+CB_000308,TXN_002591,credit_not_processed,3540.26,2026-02-15,Customer claims refund was not received,lost
+CB_000309,TXN_002598,credit_not_processed,1817.56,2026-02-16,Customer claims refund was not received,under_review
+CB_000310,TXN_002609,product_not_received,6289.77,2026-05-06,Customer claims product was not received,won
+CB_000311,TXN_002610,product_not_received,6546.5,2026-04-30,Customer claims product was not received,won
+CB_000312,TXN_002613,product_not_received,2401.62,2026-05-13,Customer claims product was not received,lost
+CB_000313,TXN_002616,product_not_received,2358.89,2026-08-26,Customer claims product was not received,won
+CB_000314,TXN_002621,credit_not_processed,2568.68,2026-03-17,Customer claims refund was not received,open
+CB_000315,TXN_002635,credit_not_processed,5360.97,2026-05-02,Customer claims refund was not received,lost
+CB_000316,TXN_002660,fraudulent,2716.92,2026-03-10,Customer does not recognize transaction,won
+CB_000317,TXN_002662,fraudulent,3414.25,2026-06-04,Customer does not recognize transaction,under_review
+CB_000318,TXN_002672,product_not_as_described,4605.84,2026-09-24,Customer claims product was different from description,under_review
+CB_000319,TXN_002693,fraudulent,2665.1,2026-07-13,Customer does not recognize transaction,under_review
+CB_000320,TXN_002697,product_not_as_described,4264.07,2026-05-29,Customer claims product was different from description,lost
+CB_000321,TXN_002706,product_not_as_described,13784.71,2026-05-03,Customer claims product was different from description,lost
+CB_000322,TXN_002712,duplicate_transaction,7513.43,2026-04-26,Customer claims duplicate charge,under_review
+CB_000323,TXN_002732,credit_not_processed,6893.95,2026-06-09,Customer claims refund was not received,under_review
+CB_000324,TXN_002736,duplicate_transaction,999.02,2026-08-28,Customer claims duplicate charge,open
+CB_000325,TXN_002740,product_not_received,11020.06,2026-08-10,Customer claims product was not received,lost
+CB_000326,TXN_002751,credit_not_processed,2977.19,2026-02-22,Customer claims refund was not received,lost
+CB_000327,TXN_002761,credit_not_processed,7726.19,2026-03-16,Customer claims refund was not received,won
+CB_000328,TXN_002774,product_not_received,5657.65,2026-04-01,Customer claims product was not received,won
+CB_000329,TXN_002785,product_not_received,2141.26,2026-08-09,Customer claims product was not received,lost
+CB_000330,TXN_002787,credit_not_processed,14402.84,2026-06-07,Customer claims refund was not received,under_review
+CB_000331,TXN_002799,product_not_as_described,2007.0,2026-06-17,Customer claims product was different from description,won
+CB_000332,TXN_002803,credit_not_processed,1864.34,2026-06-06,Customer claims refund was not received,lost
+CB_000333,TXN_002813,fraudulent,2221.39,2026-07-29,Customer does not recognize transaction,open
+CB_000334,TXN_002820,duplicate_transaction,1798.96,2026-06-28,Customer claims duplicate charge,under_review
+CB_000335,TXN_002869,product_not_received,11251.05,2026-07-14,Customer claims product was not received,won
+CB_000336,TXN_002874,duplicate_transaction,4570.74,2026-04-16,Customer claims duplicate charge,under_review
+CB_000337,TXN_002891,fraudulent,3940.21,2026-05-05,Customer does not recognize transaction,open
+CB_000338,TXN_002907,product_not_received,2266.74,2026-03-12,Customer claims product was not received,under_review
+CB_000339,TXN_002919,product_not_received,3882.82,2026-09-06,Customer claims product was not received,won
+CB_000340,TXN_002920,product_not_received,1353.88,2026-02-23,Customer claims product was not received,lost
+CB_000341,TXN_002930,duplicate_transaction,4235.63,2026-04-10,Customer claims duplicate charge,won
+CB_000342,TXN_002937,credit_not_processed,4319.66,2026-05-25,Customer claims refund was not received,lost
+CB_000343,TXN_002948,product_not_as_described,3087.54,2026-03-04,Customer claims product was different from description,open
+CB_000344,TXN_002962,fraudulent,9745.51,2026-06-10,Customer does not recognize transaction,lost
+CB_000345,TXN_002977,duplicate_transaction,2599.87,2026-04-05,Customer claims duplicate charge,under_review
+CB_000346,TXN_002980,duplicate_transaction,1789.4,2026-06-15,Customer claims duplicate charge,lost
+CB_000347,TXN_002986,product_not_as_described,9516.05,2026-03-25,Customer claims product was different from description,won
+CB_000348,TXN_002991,duplicate_transaction,6124.03,2026-03-06,Customer claims duplicate charge,open
+CB_000349,TXN_002994,product_not_as_described,5920.13,2026-02-24,Customer claims product was different from description,open
+CB_000350,TXN_002995,credit_not_processed,5485.44,2026-06-14,Customer claims refund was not received,open
+CB_000351,TXN_003020,duplicate_transaction,2096.06,2026-04-12,Customer claims duplicate charge,under_review
+CB_000352,TXN_003022,credit_not_processed,3140.36,2026-02-14,Customer claims refund was not received,won
+CB_000353,TXN_003032,duplicate_transaction,3825.49,2026-08-04,Customer claims duplicate charge,lost
+CB_000354,TXN_003035,product_not_received,4922.01,2026-08-31,Customer claims product was not received,lost
+CB_000355,TXN_003039,duplicate_transaction,4901.21,2026-04-10,Customer claims duplicate charge,open
+CB_000356,TXN_003056,product_not_received,700.61,2026-04-14,Customer claims product was not received,won
+CB_000357,TXN_003057,product_not_received,3796.71,2026-01-15,Customer claims product was not received,won
+CB_000358,TXN_003058,duplicate_transaction,1634.0,2026-02-06,Customer claims duplicate charge,under_review
+CB_000359,TXN_003080,product_not_received,7096.82,2026-07-15,Customer claims product was not received,open
+CB_000360,TXN_003091,product_not_as_described,2454.95,2026-03-17,Customer claims product was different from description,open
+CB_000361,TXN_003096,fraudulent,925.79,2026-02-09,Customer does not recognize transaction,under_review
+CB_000362,TXN_003102,duplicate_transaction,4078.94,2026-07-21,Customer claims duplicate charge,won
+CB_000363,TXN_003105,product_not_as_described,6737.86,2026-01-12,Customer claims product was different from description,won
+CB_000364,TXN_003125,product_not_received,6863.62,2026-06-08,Customer claims product was not received,under_review
+CB_000365,TXN_003126,credit_not_processed,2928.99,2026-07-08,Customer claims refund was not received,open
+CB_000366,TXN_003128,duplicate_transaction,5885.89,2026-05-03,Customer claims duplicate charge,won
+CB_000367,TXN_003136,credit_not_processed,7685.89,2026-07-23,Customer claims refund was not received,under_review
+CB_000368,TXN_003144,product_not_received,3401.43,2026-07-01,Customer claims product was not received,open
+CB_000369,TXN_003171,fraudulent,6644.01,2026-04-27,Customer does not recognize transaction,won
+CB_000370,TXN_003175,duplicate_transaction,2775.15,2026-06-05,Customer claims duplicate charge,open
+CB_000371,TXN_003184,fraudulent,1069.13,2026-05-24,Customer does not recognize transaction,lost
+CB_000372,TXN_003190,product_not_as_described,4017.25,2026-02-21,Customer claims product was different from description,open
+CB_000373,TXN_003195,product_not_as_described,1811.14,2026-04-24,Customer claims product was different from description,lost
+CB_000374,TXN_003200,fraudulent,8118.52,2026-06-10,Customer does not recognize transaction,open
+CB_000375,TXN_003249,product_not_received,11845.91,2026-03-04,Customer claims product was not received,under_review
+CB_000376,TXN_003251,fraudulent,6100.32,2026-09-14,Customer does not recognize transaction,open
+CB_000377,TXN_003264,duplicate_transaction,10043.14,2026-04-15,Customer claims duplicate charge,lost
+CB_000378,TXN_003307,product_not_received,7890.84,2026-07-06,Customer claims product was not received,lost
+CB_000379,TXN_003310,duplicate_transaction,3574.84,2026-01-14,Customer claims duplicate charge,lost
+CB_000380,TXN_003311,duplicate_transaction,3631.04,2026-05-20,Customer claims duplicate charge,open
+CB_000381,TXN_003318,product_not_as_described,22697.44,2026-05-26,Customer claims product was different from description,open
+CB_000382,TXN_003321,product_not_as_described,1622.18,2026-02-02,Customer claims product was different from description,won
+CB_000383,TXN_003327,credit_not_processed,1679.66,2026-04-25,Customer claims refund was not received,under_review
+CB_000384,TXN_003331,fraudulent,7049.83,2026-07-26,Customer does not recognize transaction,open
+CB_000385,TXN_003334,product_not_as_described,4284.88,2026-09-11,Customer claims product was different from description,open
+CB_000386,TXN_003345,duplicate_transaction,15023.91,2026-01-27,Customer claims duplicate charge,lost
+CB_000387,TXN_003347,credit_not_processed,6168.74,2026-02-25,Customer claims refund was not received,won
+CB_000388,TXN_003358,credit_not_processed,2570.68,2026-02-24,Customer claims refund was not received,open
+CB_000389,TXN_003360,product_not_as_described,5492.99,2026-05-09,Customer claims product was different from description,won
+CB_000390,TXN_003362,fraudulent,2564.57,2026-02-05,Customer does not recognize transaction,lost
+CB_000391,TXN_003368,fraudulent,26073.8,2026-05-23,Customer does not recognize transaction,lost
+CB_000392,TXN_003370,product_not_received,1208.46,2026-09-14,Customer claims product was not received,lost
+CB_000393,TXN_003380,product_not_received,3277.44,2026-02-24,Customer claims product was not received,lost
+CB_000394,TXN_003383,duplicate_transaction,2384.22,2026-04-03,Customer claims duplicate charge,won
+CB_000395,TXN_003391,product_not_as_described,2470.19,2026-03-17,Customer claims product was different from description,lost
+CB_000396,TXN_003395,product_not_as_described,3686.72,2026-05-18,Customer claims product was different from description,lost
+CB_000397,TXN_003407,product_not_received,1051.13,2026-04-28,Customer claims product was not received,lost
+CB_000398,TXN_003423,product_not_received,8266.16,2026-07-27,Customer claims product was not received,under_review
+CB_000399,TXN_003446,credit_not_processed,2288.3,2026-09-09,Customer claims refund was not received,won
+CB_000400,TXN_003453,fraudulent,2308.53,2026-05-27,Customer does not recognize transaction,open
+CB_000401,TXN_003465,product_not_as_described,9473.64,2026-09-02,Customer claims product was different from description,under_review
+CB_000402,TXN_003489,fraudulent,8215.0,2026-09-09,Customer does not recognize transaction,under_review
+CB_000403,TXN_003494,duplicate_transaction,4873.52,2026-05-29,Customer claims duplicate charge,under_review
+CB_000404,TXN_003497,product_not_as_described,6644.76,2026-05-18,Customer claims product was different from description,won
+CB_000405,TXN_003499,credit_not_processed,5088.28,2026-07-11,Customer claims refund was not received,open
+CB_000406,TXN_003500,product_not_received,11322.34,2026-07-30,Customer claims product was not received,under_review
+CB_000407,TXN_003502,product_not_received,3719.57,2026-03-26,Customer claims product was not received,won
+CB_000408,TXN_003504,fraudulent,4422.12,2026-05-19,Customer does not recognize transaction,under_review
+CB_000409,TXN_003520,fraudulent,3584.58,2026-08-30,Customer does not recognize transaction,won
+CB_000410,TXN_003527,fraudulent,4122.44,2026-04-28,Customer does not recognize transaction,won
+CB_000411,TXN_003529,product_not_received,2911.32,2026-06-26,Customer claims product was not received,won
+CB_000412,TXN_003543,product_not_as_described,3227.82,2026-08-13,Customer claims product was different from description,open
+CB_000413,TXN_003557,product_not_received,3062.25,2026-05-08,Customer claims product was not received,won
+CB_000414,TXN_003559,credit_not_processed,8924.46,2026-07-31,Customer claims refund was not received,open
+CB_000415,TXN_003585,product_not_received,2735.26,2026-05-17,Customer claims product was not received,open
+CB_000416,TXN_003586,product_not_as_described,1749.27,2026-07-23,Customer claims product was different from description,won
+CB_000417,TXN_003598,credit_not_processed,3190.05,2026-06-06,Customer claims refund was not received,lost
+CB_000418,TXN_003607,duplicate_transaction,4211.9,2026-01-20,Customer claims duplicate charge,open
+CB_000419,TXN_003608,duplicate_transaction,3702.68,2026-06-24,Customer claims duplicate charge,open
+CB_000420,TXN_003618,product_not_as_described,3659.89,2026-04-07,Customer claims product was different from description,lost
+CB_000421,TXN_003627,credit_not_processed,6308.45,2026-09-02,Customer claims refund was not received,won
+CB_000422,TXN_003636,credit_not_processed,1263.33,2026-08-21,Customer claims refund was not received,won
+CB_000423,TXN_003638,product_not_as_described,1356.87,2026-08-26,Customer claims product was different from description,lost
+CB_000424,TXN_003639,product_not_received,2015.25,2026-04-23,Customer claims product was not received,open
+CB_000425,TXN_003642,credit_not_processed,650.04,2026-04-13,Customer claims refund was not received,open
+CB_000426,TXN_003646,fraudulent,9087.46,2026-04-05,Customer does not recognize transaction,open
+CB_000427,TXN_003648,fraudulent,2855.21,2026-05-17,Customer does not recognize transaction,won
+CB_000428,TXN_003656,product_not_received,779.23,2026-04-04,Customer claims product was not received,lost
+CB_000429,TXN_003667,product_not_as_described,1133.88,2026-07-25,Customer claims product was different from description,won
+CB_000430,TXN_003668,fraudulent,2650.74,2026-07-28,Customer does not recognize transaction,won
+CB_000431,TXN_003696,duplicate_transaction,9096.88,2026-01-16,Customer claims duplicate charge,under_review
+CB_000432,TXN_003697,duplicate_transaction,1454.14,2026-06-23,Customer claims duplicate charge,open
+CB_000433,TXN_003705,product_not_as_described,1398.45,2026-05-02,Customer claims product was different from description,under_review
+CB_000434,TXN_003706,fraudulent,5093.71,2026-01-22,Customer does not recognize transaction,won
+CB_000435,TXN_003710,duplicate_transaction,2744.63,2026-06-22,Customer claims duplicate charge,won
+CB_000436,TXN_003720,fraudulent,4307.43,2026-04-01,Customer does not recognize transaction,under_review
+CB_000437,TXN_003722,product_not_received,2892.8,2026-08-20,Customer claims product was not received,won
+CB_000438,TXN_003729,product_not_received,2400.1,2026-03-16,Customer claims product was not received,open
+CB_000439,TXN_003740,product_not_as_described,9477.63,2026-05-02,Customer claims product was different from description,open
+CB_000440,TXN_003743,product_not_received,3841.24,2026-08-31,Customer claims product was not received,open
+CB_000441,TXN_003751,duplicate_transaction,1493.1,2026-05-29,Customer claims duplicate charge,lost
+CB_000442,TXN_003779,credit_not_processed,2311.87,2026-04-29,Customer claims refund was not received,open
+CB_000443,TXN_003782,duplicate_transaction,2656.81,2026-02-05,Customer claims duplicate charge,open
+CB_000444,TXN_003787,product_not_as_described,2024.26,2026-07-23,Customer claims product was different from description,under_review
+CB_000445,TXN_003791,duplicate_transaction,9176.87,2026-04-09,Customer claims duplicate charge,open
+CB_000446,TXN_003792,product_not_received,386.87,2026-04-12,Customer claims product was not received,lost
+CB_000447,TXN_003828,fraudulent,4532.87,2026-03-26,Customer does not recognize transaction,under_review
+CB_000448,TXN_003836,duplicate_transaction,269.96,2026-04-13,Customer claims duplicate charge,under_review
+CB_000449,TXN_003842,credit_not_processed,4394.94,2026-03-15,Customer claims refund was not received,open
+CB_000450,TXN_003850,product_not_received,3429.62,2026-07-08,Customer claims product was not received,won
+CB_000451,TXN_003862,fraudulent,4337.51,2026-02-28,Customer does not recognize transaction,lost
+CB_000452,TXN_003872,credit_not_processed,4167.3,2026-07-25,Customer claims refund was not received,won
+CB_000453,TXN_003874,credit_not_processed,3257.26,2026-03-31,Customer claims refund was not received,under_review
+CB_000454,TXN_003875,product_not_received,1183.71,2026-02-07,Customer claims product was not received,lost
+CB_000455,TXN_003880,fraudulent,12643.89,2026-05-09,Customer does not recognize transaction,lost
+CB_000456,TXN_003896,product_not_received,2953.22,2026-07-07,Customer claims product was not received,under_review
+CB_000457,TXN_003897,product_not_received,2335.47,2026-03-27,Customer claims product was not received,won
+CB_000458,TXN_003903,fraudulent,5205.1,2026-04-15,Customer does not recognize transaction,lost
+CB_000459,TXN_003925,product_not_as_described,3882.86,2026-05-12,Customer claims product was different from description,lost
+CB_000460,TXN_003928,duplicate_transaction,4030.3,2026-04-16,Customer claims duplicate charge,open
+CB_000461,TXN_003930,credit_not_processed,5279.48,2026-04-21,Customer claims refund was not received,won
+CB_000462,TXN_003936,credit_not_processed,2891.76,2026-02-18,Customer claims refund was not received,open
+CB_000463,TXN_003937,fraudulent,7478.25,2026-05-17,Customer does not recognize transaction,won
+CB_000464,TXN_003946,duplicate_transaction,2746.47,2026-05-13,Customer claims duplicate charge,lost
+CB_000465,TXN_003955,product_not_as_described,1137.61,2026-08-02,Customer claims product was different from description,under_review
+CB_000466,TXN_003958,credit_not_processed,5109.64,2026-05-04,Customer claims refund was not received,open
+CB_000467,TXN_003964,duplicate_transaction,570.16,2026-04-28,Customer claims duplicate charge,lost
+CB_000468,TXN_003970,credit_not_processed,6148.63,2026-08-25,Customer claims refund was not received,open
+CB_000469,TXN_003977,product_not_as_described,2932.14,2026-08-04,Customer claims product was different from description,won
+CB_000470,TXN_003978,product_not_received,10094.07,2026-05-23,Customer claims product was not received,lost
+CB_000471,TXN_003993,fraudulent,13571.76,2026-03-06,Customer does not recognize transaction,won
+CB_000472,TXN_004003,fraudulent,13453.77,2026-07-02,Customer does not recognize transaction,under_review
+CB_000473,TXN_004017,product_not_as_described,2117.51,2026-08-25,Customer claims product was different from description,open
+CB_000474,TXN_004027,product_not_as_described,3541.15,2026-02-22,Customer claims product was different from description,open
+CB_000475,TXN_004032,duplicate_transaction,700.58,2026-04-28,Customer claims duplicate charge,lost
+CB_000476,TXN_004033,duplicate_transaction,824.97,2026-06-21,Customer claims duplicate charge,lost
+CB_000477,TXN_004043,fraudulent,10935.1,2026-08-24,Customer does not recognize transaction,under_review
+CB_000478,TXN_004049,fraudulent,2557.54,2026-06-29,Customer does not recognize transaction,won
+CB_000479,TXN_004078,fraudulent,3177.37,2026-07-15,Customer does not recognize transaction,lost
+CB_000480,TXN_004084,fraudulent,2587.72,2026-03-18,Customer does not recognize transaction,won
+CB_000481,TXN_004085,fraudulent,1333.49,2026-07-01,Customer does not recognize transaction,open
+CB_000482,TXN_004109,fraudulent,3254.85,2026-04-17,Customer does not recognize transaction,lost
+CB_000483,TXN_004115,product_not_as_described,3621.01,2026-08-30,Customer claims product was different from description,under_review
+CB_000484,TXN_004137,credit_not_processed,2028.82,2026-06-13,Customer claims refund was not received,open
+CB_000485,TXN_004155,product_not_as_described,2695.32,2026-04-15,Customer claims product was different from description,open
+CB_000486,TXN_004159,product_not_received,2480.84,2026-02-19,Customer claims product was not received,won
+CB_000487,TXN_004164,duplicate_transaction,2195.1,2026-06-18,Customer claims duplicate charge,lost
+CB_000488,TXN_004174,credit_not_processed,10881.07,2026-07-26,Customer claims refund was not received,won
+CB_000489,TXN_004199,credit_not_processed,1976.95,2026-02-07,Customer claims refund was not received,open
+CB_000490,TXN_004206,product_not_as_described,1474.55,2026-06-05,Customer claims product was different from description,won
+CB_000491,TXN_004216,product_not_received,14270.32,2026-08-19,Customer claims product was not received,under_review
+CB_000492,TXN_004217,fraudulent,3738.72,2026-03-01,Customer does not recognize transaction,open
+CB_000493,TXN_004218,duplicate_transaction,3763.36,2026-04-16,Customer claims duplicate charge,won
+CB_000494,TXN_004224,product_not_as_described,5853.29,2026-04-22,Customer claims product was different from description,won
+CB_000495,TXN_004230,credit_not_processed,2254.85,2026-08-06,Customer claims refund was not received,won
+CB_000496,TXN_004239,credit_not_processed,10869.12,2026-05-17,Customer claims refund was not received,open
+CB_000497,TXN_004255,duplicate_transaction,13716.61,2026-03-09,Customer claims duplicate charge,under_review
+CB_000498,TXN_004270,product_not_as_described,7280.26,2026-01-23,Customer claims product was different from description,under_review
+CB_000499,TXN_004281,duplicate_transaction,4343.71,2026-02-06,Customer claims duplicate charge,won
+CB_000500,TXN_004284,credit_not_processed,6068.75,2026-02-12,Customer claims refund was not received,lost
+CB_000501,TXN_004289,credit_not_processed,1819.56,2026-08-01,Customer claims refund was not received,under_review
+CB_000502,TXN_004291,product_not_as_described,1758.07,2026-08-03,Customer claims product was different from description,won
+CB_000503,TXN_004293,product_not_received,1571.25,2026-07-16,Customer claims product was not received,won
+CB_000504,TXN_004299,product_not_as_described,7080.54,2026-06-11,Customer claims product was different from description,won
+CB_000505,TXN_004312,credit_not_processed,4350.98,2026-03-27,Customer claims refund was not received,under_review
+CB_000506,TXN_004321,fraudulent,3606.72,2026-08-14,Customer does not recognize transaction,won
+CB_000507,TXN_004325,duplicate_transaction,798.25,2026-02-15,Customer claims duplicate charge,open
+CB_000508,TXN_004330,credit_not_processed,1427.92,2026-04-07,Customer claims refund was not received,won
+CB_000509,TXN_004336,fraudulent,8028.83,2026-03-11,Customer does not recognize transaction,won
+CB_000510,TXN_004342,credit_not_processed,3342.94,2026-07-05,Customer claims refund was not received,under_review
+CB_000511,TXN_004349,fraudulent,16278.27,2026-04-20,Customer does not recognize transaction,won
+CB_000512,TXN_004364,fraudulent,4722.42,2026-06-28,Customer does not recognize transaction,won
+CB_000513,TXN_004372,product_not_received,5472.9,2026-05-15,Customer claims product was not received,lost
+CB_000514,TXN_004374,duplicate_transaction,3384.96,2026-02-03,Customer claims duplicate charge,open
+CB_000515,TXN_004394,product_not_as_described,4837.76,2026-08-07,Customer claims product was different from description,won
+CB_000516,TXN_004400,duplicate_transaction,25543.81,2026-07-12,Customer claims duplicate charge,won
+CB_000517,TXN_004428,duplicate_transaction,1394.9,2026-08-08,Customer claims duplicate charge,lost
+CB_000518,TXN_004431,product_not_as_described,592.63,2026-02-21,Customer claims product was different from description,lost
+CB_000519,TXN_004460,fraudulent,939.06,2026-04-17,Customer does not recognize transaction,lost
+CB_000520,TXN_004468,duplicate_transaction,1928.3,2026-06-08,Customer claims duplicate charge,open
+CB_000521,TXN_004470,fraudulent,1164.32,2026-03-15,Customer does not recognize transaction,open
+CB_000522,TXN_004483,product_not_as_described,6220.33,2026-05-07,Customer claims product was different from description,lost
+CB_000523,TXN_004486,fraudulent,3397.69,2026-04-03,Customer does not recognize transaction,under_review
+CB_000524,TXN_004489,product_not_as_described,3716.76,2026-08-06,Customer claims product was different from description,under_review
+CB_000525,TXN_004508,product_not_received,2439.44,2026-04-13,Customer claims product was not received,lost
+CB_000526,TXN_004510,fraudulent,14661.1,2026-07-15,Customer does not recognize transaction,open
+CB_000527,TXN_004511,fraudulent,2619.19,2026-02-20,Customer does not recognize transaction,open
+CB_000528,TXN_004512,credit_not_processed,2792.22,2026-06-18,Customer claims refund was not received,lost
+CB_000529,TXN_004527,product_not_received,3002.62,2026-08-12,Customer claims product was not received,lost
+CB_000530,TXN_004534,product_not_as_described,12316.23,2026-05-22,Customer claims product was different from description,lost
+CB_000531,TXN_004545,product_not_received,1767.51,2026-03-26,Customer claims product was not received,won
+CB_000532,TXN_004555,product_not_as_described,5965.03,2026-03-31,Customer claims product was different from description,under_review
+CB_000533,TXN_004572,credit_not_processed,5589.02,2026-02-04,Customer claims refund was not received,under_review
+CB_000534,TXN_004574,product_not_received,4019.52,2026-04-24,Customer claims product was not received,won
+CB_000535,TXN_004579,fraudulent,5783.18,2026-07-07,Customer does not recognize transaction,under_review
+CB_000536,TXN_004580,fraudulent,4760.46,2026-06-29,Customer does not recognize transaction,open
+CB_000537,TXN_004584,duplicate_transaction,13690.69,2026-08-25,Customer claims duplicate charge,won
+CB_000538,TXN_004585,product_not_as_described,4092.64,2026-02-10,Customer claims product was different from description,lost
+CB_000539,TXN_004589,credit_not_processed,3630.23,2026-08-26,Customer claims refund was not received,lost
+CB_000540,TXN_004591,fraudulent,1392.23,2026-04-06,Customer does not recognize transaction,under_review
+CB_000541,TXN_004623,duplicate_transaction,3379.24,2026-07-15,Customer claims duplicate charge,won
+CB_000542,TXN_004640,credit_not_processed,2527.88,2026-01-22,Customer claims refund was not received,won
+CB_000543,TXN_004641,product_not_as_described,5732.74,2026-09-05,Customer claims product was different from description,open
+CB_000544,TXN_004644,duplicate_transaction,3328.35,2026-09-12,Customer claims duplicate charge,under_review
+CB_000545,TXN_004654,product_not_received,15173.93,2026-06-16,Customer claims product was not received,won
+CB_000546,TXN_004660,fraudulent,933.28,2026-05-01,Customer does not recognize transaction,won
+CB_000547,TXN_004672,fraudulent,4374.94,2026-08-08,Customer does not recognize transaction,open
+CB_000548,TXN_004682,product_not_received,18475.41,2026-03-22,Customer claims product was not received,open
+CB_000549,TXN_004706,fraudulent,2051.12,2026-08-19,Customer does not recognize transaction,lost
+CB_000550,TXN_004724,product_not_received,6380.97,2026-08-25,Customer claims product was not received,under_review
+CB_000551,TXN_004739,fraudulent,4698.15,2026-03-11,Customer does not recognize transaction,won
+CB_000552,TXN_004750,duplicate_transaction,13710.25,2026-08-21,Customer claims duplicate charge,won
+CB_000553,TXN_004751,duplicate_transaction,1645.76,2026-05-17,Customer claims duplicate charge,won
+CB_000554,TXN_004754,duplicate_transaction,1785.84,2026-02-07,Customer claims duplicate charge,open
+CB_000555,TXN_004758,product_not_as_described,2944.03,2026-06-22,Customer claims product was different from description,open
+CB_000556,TXN_004770,duplicate_transaction,6607.44,2026-03-04,Customer claims duplicate charge,won
+CB_000557,TXN_004787,fraudulent,3747.25,2026-04-06,Customer does not recognize transaction,under_review
+CB_000558,TXN_004794,duplicate_transaction,3311.65,2026-03-12,Customer claims duplicate charge,under_review
+CB_000559,TXN_004810,product_not_as_described,7681.21,2026-09-05,Customer claims product was different from description,open
+CB_000560,TXN_004817,fraudulent,1892.02,2026-08-22,Customer does not recognize transaction,open
+CB_000561,TXN_004832,fraudulent,1594.7,2026-01-26,Customer does not recognize transaction,lost
+CB_000562,TXN_004848,product_not_received,6147.69,2026-04-11,Customer claims product was not received,under_review
+CB_000563,TXN_004859,product_not_received,2466.25,2026-06-07,Customer claims product was not received,open
+CB_000564,TXN_004872,duplicate_transaction,1776.36,2026-06-30,Customer claims duplicate charge,under_review
+CB_000565,TXN_004876,duplicate_transaction,2280.18,2026-07-29,Customer claims duplicate charge,under_review
+CB_000566,TXN_004884,fraudulent,5127.69,2026-04-02,Customer does not recognize transaction,under_review
+CB_000567,TXN_004894,fraudulent,6518.54,2026-04-23,Customer does not recognize transaction,open
+CB_000568,TXN_004902,credit_not_processed,4663.41,2026-08-10,Customer claims refund was not received,under_review
+CB_000569,TXN_004945,product_not_received,5912.39,2026-02-07,Customer claims product was not received,open
+CB_000570,TXN_004954,fraudulent,1519.29,2026-08-23,Customer does not recognize transaction,won
+CB_000571,TXN_004978,duplicate_transaction,7386.44,2026-07-05,Customer claims duplicate charge,lost
+CB_000572,TXN_004980,fraudulent,3764.3,2026-04-27,Customer does not recognize transaction,won
+CB_000573,TXN_004981,fraudulent,1201.07,2026-07-31,Customer does not recognize transaction,under_review
+CB_000574,TXN_004991,fraudulent,2222.7,2026-01-09,Customer does not recognize transaction,open
+CB_000575,TXN_004993,product_not_received,4536.6,2026-07-17,Customer claims product was not received,under_review
+CB_000576,TXN_004997,fraudulent,8544.9,2026-02-06,Customer does not recognize transaction,open
