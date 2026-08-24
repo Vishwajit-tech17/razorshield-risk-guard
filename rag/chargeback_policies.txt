@@ -1,0 +1,133 @@
+RAZORSHIELD AI - CHARGEBACK POLICY KNOWLEDGE BASE
+
+POLICY 1: UNAUTHORIZED TRANSACTION
+
+An unauthorized transaction occurs when a customer claims that they did not
+make or authorize a payment.
+
+Useful evidence includes:
+- Payment authentication status
+- Customer account information
+- Device information
+- IP country
+- Previous successful transactions
+- Transaction history
+- Delivery information
+
+If strong authentication was successfully completed, this may support the
+merchant's response to an unauthorized transaction claim.
+
+
+POLICY 2: CARD PAYMENT AUTHENTICATION
+
+Authentication information can be used as supporting evidence during a
+chargeback investigation.
+
+A successful authentication result can indicate that additional verification
+was completed during the payment process.
+
+Authentication evidence should be included when responding to an applicable
+chargeback.
+
+
+POLICY 3: DELIVERY EVIDENCE
+
+Delivery information can help establish that goods or services were provided.
+
+Useful delivery evidence includes:
+- Delivery status
+- Delivery confirmation
+- Shipping information
+- Order information
+- Date of delivery
+
+A delivered order can provide supporting evidence against certain
+chargeback claims.
+
+
+POLICY 4: CUSTOMER TRANSACTION HISTORY
+
+Previous successful transactions can provide useful context during an
+investigation.
+
+Relevant information includes:
+- Number of previous transactions
+- Successful transactions
+- Previous chargebacks
+- Previous refunds
+- Account age
+
+A long-standing customer with previous successful transactions may provide
+different risk context from a newly created account.
+
+
+POLICY 5: REFUND INFORMATION
+
+Refund history should be considered during chargeback investigation.
+
+Useful evidence includes:
+- Previous refunds
+- Refund status
+- Refund dates
+- Refund amount
+
+If a refund has already been issued, this information should be considered
+when investigating a related chargeback.
+
+
+POLICY 6: NEW CUSTOMER RISK
+
+Recently created accounts may require additional investigation.
+
+An account with a short account age combined with unusual transaction
+characteristics may represent increased risk.
+
+Account age should not be used as the only reason for rejecting or escalating
+a transaction.
+
+
+POLICY 7: CHARGEBACK HISTORY
+
+Previous chargebacks are an important risk indicator.
+
+A customer with multiple previous chargebacks may require additional review.
+
+Chargeback history should be considered together with other transaction and
+customer-level evidence rather than being used as the sole decision factor.
+
+
+POLICY 8: HUMAN REVIEW
+
+High-risk cases should be available for human review.
+
+Automated risk scoring should support investigators rather than blindly
+automating decisions.
+
+Cases with insufficient evidence, conflicting signals, or high financial
+impact should be escalated for human investigation.
+
+
+POLICY 9: EVIDENCE QUALITY
+
+Evidence should be relevant to the chargeback reason and supported by
+available transaction information.
+
+The system should not invent evidence.
+
+If required information is unavailable, the system should clearly indicate
+that the evidence is unavailable.
+
+
+POLICY 10: INVESTIGATION PRINCIPLE
+
+RazorShield AI should combine:
+- ML risk score
+- Transaction information
+- Customer history
+- Authentication information
+- Delivery information
+- Refund information
+- Relevant policy documents
+
+The final investigation should provide evidence-based reasoning and clearly
+distinguish between available evidence and missing evidence.
