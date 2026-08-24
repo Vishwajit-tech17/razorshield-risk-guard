@@ -4,6 +4,7 @@
 # ============================================================
 
 from rag_engine import retrieve_policies
+from review_engine import determine_review_action
 
 
 def generate_investigation(
@@ -24,6 +25,12 @@ def generate_investigation(
     # --------------------------------------------------------
 
     policies = retrieve_policies(query)
+    review_decision = determine_review_action(
+        risk_probability=risk_probability,
+        evidence_available=len(policies) > 0,
+        conflicting_signals=False,
+        financial_impact="NORMAL"
+    )
 
     # --------------------------------------------------------
     # Risk classification
@@ -48,6 +55,7 @@ def generate_investigation(
         "transaction_summary": transaction,
 
         "supporting_policy_evidence": policies,
+        "human_review": review_decision,
 
         "investigation_reasoning": [
             f"ML model assigned a {risk_level} risk level.",
@@ -127,6 +135,11 @@ if __name__ == "__main__":
 
     print("\nSupporting Policy Evidence:")
     print(result["supporting_policy_evidence"])
+
+    print("\nHuman Review Decision:")
+    print("Action:", result["human_review"]["action"])
+    print("Reason:", result["human_review"]["reason"])
+    print("Priority:", result["human_review"]["priority"])
 
     print("\n" + "=" * 60)
     print("DAY 8 INVESTIGATION TEST COMPLETE")
