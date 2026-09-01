@@ -1,191 +1,249 @@
 # ============================================================
 # RAZORSHIELD AI - DAY 9
-# HUMAN REVIEW & POLICY ESCALATION ENGINE
+# Human Review Decision Engine
 # ============================================================
 
-# ------------------------------------------------------------
-# HUMAN REVIEW DECISION
-# ------------------------------------------------------------
 
 def determine_review_action(
     risk_probability,
-    evidence_available=True,
+    evidence_available,
     conflicting_signals=False,
     financial_impact="NORMAL"
 ):
     """
-    Determine whether a chargeback investigation should be
-    handled automatically or escalated to a human investigator.
+    Determine whether a transaction requires human review.
 
-    RazorShield AI follows a human-in-the-loop approach.
+    AI provides decision support only.
+    Final financial action remains with a human reviewer.
     """
 
     # --------------------------------------------------------
-    # 1. Insufficient evidence
+    # Risk classification
+    # --------------------------------------------------------
+
+    risk_probability = float(risk_probability)
+
+    if risk_probability >= 0.70:
+        risk_level = "HIGH"
+
+    elif risk_probability >= 0.40:
+        risk_level = "MEDIUM"
+
+    else:
+        risk_level = "LOW"
+
+
+    # --------------------------------------------------------
+    # Normalize financial impact
+    # --------------------------------------------------------
+
+    financial_impact = str(financial_impact).upper()
+
+
+    # --------------------------------------------------------
+    # Evidence availability
     # --------------------------------------------------------
 
     if not evidence_available:
 
         return {
-            "action": "HUMAN_REVIEW",
-            "reason": "Insufficient evidence available.",
-            "priority": "HIGH"
+            "action": "ESCALATE",
+            "reason": (
+                "Required evidence is unavailable. "
+                "The transaction must be reviewed by a human."
+            ),
+            "priority": "HIGH",
+            "risk_level": risk_level,
+            "risk_probability": round(risk_probability, 4),
+            "human_required": True
         }
 
+
     # --------------------------------------------------------
-    # 2. Conflicting signals
+    # Conflicting evidence
     # --------------------------------------------------------
 
     if conflicting_signals:
 
         return {
-            "action": "HUMAN_REVIEW",
-            "reason": "Conflicting transaction risk signals detected.",
-            "priority": "HIGH"
+            "action": "ESCALATE",
+            "reason": (
+                "Available evidence contains conflicting signals. "
+                "Human investigation is required before taking action."
+            ),
+            "priority": "HIGH",
+            "risk_level": risk_level,
+            "risk_probability": round(risk_probability, 4),
+            "human_required": True
         }
 
+
     # --------------------------------------------------------
-    # 3. High financial impact
+    # HIGH RISK
     # --------------------------------------------------------
 
-    if financial_impact.upper() == "HIGH":
+    if risk_level == "HIGH":
 
         return {
-            "action": "HUMAN_REVIEW",
-            "reason": "Transaction has high financial impact.",
-            "priority": "HIGH"
+            "action": "ESCALATE",
+            "reason": (
+                "The ML model indicates high chargeback risk. "
+                "Human investigation is required before taking action."
+            ),
+            "priority": "HIGH",
+            "risk_level": risk_level,
+            "risk_probability": round(risk_probability, 4),
+            "human_required": True
         }
 
+
     # --------------------------------------------------------
-    # 4. High ML risk
+    # MEDIUM RISK
     # --------------------------------------------------------
 
-    if risk_probability >= 0.70:
+    if risk_level == "MEDIUM":
+
+        if financial_impact == "HIGH":
+
+            return {
+                "action": "ESCALATE",
+                "reason": (
+                    "The transaction has medium risk with high "
+                    "financial impact. Human investigation is required."
+                ),
+                "priority": "HIGH",
+                "risk_level": risk_level,
+                "risk_probability": round(risk_probability, 4),
+                "human_required": True
+            }
 
         return {
-            "action": "HUMAN_REVIEW",
-            "reason": "ML model assigned high chargeback risk.",
-            "priority": "HIGH"
+            "action": "REVIEW",
+            "reason": (
+                "The transaction has medium chargeback risk. "
+                "Available evidence should be reviewed by a human "
+                "before taking action."
+            ),
+            "priority": "MEDIUM",
+            "risk_level": risk_level,
+            "risk_probability": round(risk_probability, 4),
+            "human_required": True
         }
 
-    # --------------------------------------------------------
-    # 5. Medium risk
-    # --------------------------------------------------------
-
-    if risk_probability >= 0.40:
-
-        return {
-            "action": "REVIEW_EVIDENCE",
-            "reason": "Medium risk requires evidence review.",
-            "priority": "MEDIUM"
-        }
 
     # --------------------------------------------------------
-    # 6. Low risk
+    # LOW RISK
     # --------------------------------------------------------
 
     return {
-        "action": "NORMAL_MONITORING",
-        "reason": "Low immediate chargeback risk detected.",
-        "priority": "LOW"
+        "action": "MONITOR",
+        "reason": (
+            "The transaction has low immediate chargeback risk. "
+            "Continue normal monitoring."
+        ),
+        "priority": "LOW",
+        "risk_level": risk_level,
+        "risk_probability": round(risk_probability, 4),
+        "human_required": False
     }
 
 
-# ------------------------------------------------------------
+# ============================================================
 # TEST
-# ------------------------------------------------------------
+# ============================================================
 
 if __name__ == "__main__":
 
+    print("\n" + "=" * 60)
+    print("RAZORSHIELD AI - DAY 9 REVIEW ENGINE TEST")
     print("=" * 60)
-    print("RAZORSHIELD AI - HUMAN REVIEW TEST")
-    print("=" * 60)
+
 
     # --------------------------------------------------------
-    # TEST 1 - HIGH RISK
+    # Test 1 - HIGH RISK
     # --------------------------------------------------------
 
-    print("\nTEST 1: High Risk")
-
-    result = determine_review_action(
+    result_high = determine_review_action(
         risk_probability=0.82,
         evidence_available=True,
         conflicting_signals=False,
         financial_impact="NORMAL"
     )
 
-    print("Action:", result["action"])
-    print("Reason:", result["reason"])
-    print("Priority:", result["priority"])
+    print("\nHIGH RISK TEST")
+    print("Action:", result_high["action"])
+    print("Reason:", result_high["reason"])
+    print("Priority:", result_high["priority"])
+
 
     # --------------------------------------------------------
-    # TEST 2 - MEDIUM RISK
+    # Test 2 - MEDIUM RISK
     # --------------------------------------------------------
 
-    print("\nTEST 2: Medium Risk")
-
-    result = determine_review_action(
+    result_medium = determine_review_action(
         risk_probability=0.58,
         evidence_available=True,
         conflicting_signals=False,
         financial_impact="NORMAL"
     )
 
-    print("Action:", result["action"])
-    print("Reason:", result["reason"])
-    print("Priority:", result["priority"])
+    print("\nMEDIUM RISK TEST")
+    print("Action:", result_medium["action"])
+    print("Reason:", result_medium["reason"])
+    print("Priority:", result_medium["priority"])
+
 
     # --------------------------------------------------------
-    # TEST 3 - INSUFFICIENT EVIDENCE
+    # Test 3 - LOW RISK
     # --------------------------------------------------------
 
-    print("\nTEST 3: Insufficient Evidence")
+    result_low = determine_review_action(
+        risk_probability=0.20,
+        evidence_available=True,
+        conflicting_signals=False,
+        financial_impact="NORMAL"
+    )
 
-    result = determine_review_action(
-        risk_probability=0.30,
+    print("\nLOW RISK TEST")
+    print("Action:", result_low["action"])
+    print("Reason:", result_low["reason"])
+    print("Priority:", result_low["priority"])
+
+
+    # --------------------------------------------------------
+    # Test 4 - Missing evidence
+    # --------------------------------------------------------
+
+    result_missing = determine_review_action(
+        risk_probability=0.45,
         evidence_available=False,
         conflicting_signals=False,
         financial_impact="NORMAL"
     )
 
-    print("Action:", result["action"])
-    print("Reason:", result["reason"])
-    print("Priority:", result["priority"])
+    print("\nMISSING EVIDENCE TEST")
+    print("Action:", result_missing["action"])
+    print("Reason:", result_missing["reason"])
+    print("Priority:", result_missing["priority"])
+
 
     # --------------------------------------------------------
-    # TEST 4 - CONFLICTING SIGNALS
+    # Test 5 - Conflicting signals
     # --------------------------------------------------------
 
-    print("\nTEST 4: Conflicting Signals")
-
-    result = determine_review_action(
-        risk_probability=0.35,
+    result_conflict = determine_review_action(
+        risk_probability=0.50,
         evidence_available=True,
         conflicting_signals=True,
         financial_impact="NORMAL"
     )
 
-    print("Action:", result["action"])
-    print("Reason:", result["reason"])
-    print("Priority:", result["priority"])
+    print("\nCONFLICTING SIGNALS TEST")
+    print("Action:", result_conflict["action"])
+    print("Reason:", result_conflict["reason"])
+    print("Priority:", result_conflict["priority"])
 
-    # --------------------------------------------------------
-    # TEST 5 - HIGH FINANCIAL IMPACT
-    # --------------------------------------------------------
-
-    print("\nTEST 5: High Financial Impact")
-
-    result = determine_review_action(
-        risk_probability=0.25,
-        evidence_available=True,
-        conflicting_signals=False,
-        financial_impact="HIGH"
-    )
-
-    print("Action:", result["action"])
-    print("Reason:", result["reason"])
-    print("Priority:", result["priority"])
 
     print("\n" + "=" * 60)
-    print("DAY 9 HUMAN REVIEW TEST COMPLETE")
+    print("DAY 9 REVIEW ENGINE TEST COMPLETE")
     print("=" * 60)

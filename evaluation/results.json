@@ -1,0 +1,98 @@
+{
+  "dataset_metadata": {
+    "total_dataset_size": 5000,
+    "training_set_size": 3500,
+    "held_out_test_set_size": 1500,
+    "split_ratio": "70% Train / 30% Test",
+    "positive_class_definition": "chargeback_label == 1 (Transaction resulted in chargeback dispute)",
+    "negative_class_definition": "chargeback_label == 0 (Legitimate transaction without dispute)",
+    "positive_class_count": 576,
+    "negative_class_count": 4424
+  },
+  "cost_assumptions": {
+    "false_positive_unit_friction_cost_inr": 500.0,
+    "false_positive_cost_rationale": "Cost of manual compliance officer investigation (~30 mins) + potential customer checkout friction.",
+    "false_negative_unit_dispute_cost_inr": 10000.0,
+    "false_negative_cost_rationale": "Direct unrecovered merchant order loss (average ~\u20b98,500) + mandatory payment gateway chargeback fee (~\u20b91,500)."
+  },
+  "model_evaluations": [
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.5573,
+      "precision": 0.1034,
+      "recall": 0.3699,
+      "f1_score": 0.1616,
+      "roc_auc": 0.4952,
+      "confusion_matrix": {
+        "true_negatives": 772,
+        "false_positives": 555,
+        "false_negatives": 109,
+        "true_positives": 64
+      },
+      "true_positives": 64,
+      "true_negatives": 772,
+      "false_positives": 555,
+      "false_negatives": 109,
+      "fp_actual_affected_amount_inr": 2315121.12,
+      "false_positive_friction_cost_inr": 277500.0,
+      "false_negative_dispute_cost_inr": 1090000.0,
+      "total_business_risk_cost_inr": 1367500.0
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.8427,
+      "precision": 0.1294,
+      "recall": 0.0636,
+      "f1_score": 0.0853,
+      "roc_auc": 0.4896,
+      "confusion_matrix": {
+        "true_negatives": 1253,
+        "false_positives": 74,
+        "false_negatives": 162,
+        "true_positives": 11
+      },
+      "true_positives": 11,
+      "true_negatives": 1253,
+      "false_positives": 74,
+      "false_negatives": 162,
+      "fp_actual_affected_amount_inr": 245085.61,
+      "false_positive_friction_cost_inr": 37000.0,
+      "false_negative_dispute_cost_inr": 1620000.0,
+      "total_business_risk_cost_inr": 1657000.0
+    },
+    {
+      "model_name": "XGBoost",
+      "accuracy": 0.8387,
+      "precision": 0.129,
+      "recall": 0.0694,
+      "f1_score": 0.0902,
+      "roc_auc": 0.4821,
+      "confusion_matrix": {
+        "true_negatives": 1246,
+        "false_positives": 81,
+        "false_negatives": 161,
+        "true_positives": 12
+      },
+      "true_positives": 12,
+      "true_negatives": 1246,
+      "false_positives": 81,
+      "false_negatives": 161,
+      "fp_actual_affected_amount_inr": 281846.65,
+      "false_positive_friction_cost_inr": 40500.0,
+      "false_negative_dispute_cost_inr": 1610000.0,
+      "total_business_risk_cost_inr": 1650500.0
+    }
+  ],
+  "selected_production_model": {
+    "model_name": "Logistic Regression",
+    "selection_reason": "Logistic Regression achieved the highest F1 Score (0.1616) and Recall (0.3699) on the held-out test set while minimizing overall business risk cost (\u20b91,367,500). It effectively balances false-positive review friction costs with false-negative chargeback prevention.",
+    "test_accuracy": 0.5573,
+    "test_precision": 0.1034,
+    "test_recall": 0.3699,
+    "test_f1_score": 0.1616,
+    "test_false_positives": 555,
+    "test_false_negatives": 109,
+    "test_fp_actual_affected_amount_inr": 2315121.12,
+    "test_total_business_risk_cost_inr": 1367500.0
+  }
+}
